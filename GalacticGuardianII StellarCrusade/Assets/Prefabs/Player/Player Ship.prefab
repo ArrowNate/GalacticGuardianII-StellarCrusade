@@ -393,6 +393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b10d74aeadde44e90cdfa82cd12498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectiles: []
+  projectileSpawnPoints: []
+  shootTimerThreshold: 0.2
+  shootTimer: 0
+  canShoot: 0
 --- !u!1 &3354633447755920434
 GameObject:
   m_ObjectHideFlags: 0
