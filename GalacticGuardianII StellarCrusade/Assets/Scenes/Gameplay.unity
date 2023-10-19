@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &418752446 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7294868148790648921, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+  m_PrefabInstance: {fileID: 970959106251547691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +220,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &572830226 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1864379143390349231, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+  m_PrefabInstance: {fileID: 970959106251547691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1084324927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6597653393181269354, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+  m_PrefabInstance: {fileID: 970959106251547691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &970959106251547691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -226,6 +241,50 @@ PrefabInstance:
     - target: {fileID: 2298270090898390158, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 4160199732634714595, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 3257222812653797247, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.data[2]
+      value: 
+      objectReference: {fileID: 7882653596776917413, guid: acaa6f33a8ceb4747847617509f6bdb5, type: 3}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 7590460695688776528, guid: 6e8bb40d86c05c546898c963e0534a94, type: 3}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectiles.Array.data[4]
+      value: 
+      objectReference: {fileID: 7508341761331907082, guid: 77a8cbb34dc0af14ca7fd8d95588c677, type: 3}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectileSpawnPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectileSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1084324927}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectileSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 572830226}
+    - target: {fileID: 3777198214864972390, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: projectileSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 418752446}
+    - target: {fileID: 4609207047244773727, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5516566328546610911, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,9 +379,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6635406002918394899, guid: acaa6f33a8ceb4747847617509f6bdb5, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7882653596776917413, guid: acaa6f33a8ceb4747847617509f6bdb5, type: 3}
       propertyPath: m_Name
       value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882653596776917413, guid: acaa6f33a8ceb4747847617509f6bdb5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -337,9 +404,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2909698969767516741, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3257222812653797247, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
       propertyPath: m_Name
       value: Blaster 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257222812653797247, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4400052372024688348, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -434,9 +509,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7465548633848110452, guid: 6e8bb40d86c05c546898c963e0534a94, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7590460695688776528, guid: 6e8bb40d86c05c546898c963e0534a94, type: 3}
       propertyPath: m_Name
       value: Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 7590460695688776528, guid: 6e8bb40d86c05c546898c963e0534a94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -491,9 +574,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7039209450564684125, guid: 77a8cbb34dc0af14ca7fd8d95588c677, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7508341761331907082, guid: 77a8cbb34dc0af14ca7fd8d95588c677, type: 3}
       propertyPath: m_Name
       value: Heavy Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508341761331907082, guid: 77a8cbb34dc0af14ca7fd8d95588c677, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -511,6 +602,10 @@ PrefabInstance:
     - target: {fileID: 4160199732634714595, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
       propertyPath: m_Name
       value: Blaster 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160199732634714595, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4828633215535313047, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,6 +646,10 @@ PrefabInstance:
     - target: {fileID: 4828633215535313047, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903663891710124829, guid: 3fad4aebcfbcf0f468c000084af2c0a7, type: 3}
+      propertyPath: m_Constraints
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
