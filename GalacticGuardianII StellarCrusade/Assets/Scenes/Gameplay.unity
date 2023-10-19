@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 147466740}
   - component: {fileID: 147466739}
   - component: {fileID: 147466738}
+  - component: {fileID: 147466742}
   m_Layer: 6
   m_Name: Blaster 2
   m_TagString: Projectile
@@ -281,6 +282,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &147466742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147466737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  spawnSound: {fileID: 0}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 10
+  maxDamage: 30
 --- !u!4 &261219992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4778328494118342, guid: 9d063803dff52f84eb81cbfac55a7355, type: 3}
@@ -303,6 +322,7 @@ GameObject:
   - component: {fileID: 474924210}
   - component: {fileID: 474924209}
   - component: {fileID: 474924208}
+  - component: {fileID: 474924212}
   m_Layer: 6
   m_Name: Missile
   m_TagString: Projectile
@@ -467,6 +487,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474924212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474924207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  spawnSound: {fileID: 0}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 10
+  maxDamage: 30
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +783,7 @@ GameObject:
   - component: {fileID: 1059312680}
   - component: {fileID: 1059312679}
   - component: {fileID: 1059312678}
+  - component: {fileID: 1059312682}
   m_Layer: 6
   m_Name: Blaster 1
   m_TagString: Projectile
@@ -891,6 +930,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059312682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059312677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  spawnSound: {fileID: 0}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 10
+  maxDamage: 30
 --- !u!4 &1206174532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4778328494118342, guid: 9d063803dff52f84eb81cbfac55a7355, type: 3}
@@ -1032,6 +1089,7 @@ GameObject:
   - component: {fileID: 1485330270}
   - component: {fileID: 1485330269}
   - component: {fileID: 1485330268}
+  - component: {fileID: 1485330272}
   m_Layer: 6
   m_Name: Laser
   m_TagString: Projectile
@@ -1178,6 +1236,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1485330272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485330267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  spawnSound: {fileID: 0}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 10
+  maxDamage: 30
 --- !u!4 &1487914703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4778328494118342, guid: 9d063803dff52f84eb81cbfac55a7355, type: 3}
@@ -1946,6 +2022,7 @@ GameObject:
   - component: {fileID: 2097765106}
   - component: {fileID: 2097765105}
   - component: {fileID: 2097765104}
+  - component: {fileID: 2097765108}
   m_Layer: 6
   m_Name: Heavy Missile
   m_TagString: Projectile
@@ -2114,6 +2191,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2097765108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097765103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  spawnSound: {fileID: 0}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 10
+  maxDamage: 30
 --- !u!1001 &2107944501
 PrefabInstance:
   m_ObjectHideFlags: 0
