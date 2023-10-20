@@ -11,6 +11,11 @@ public class ProjectileLife : MonoBehaviour
         Invoke("DeactivateProjectile", timer);
     }
 
+    private void OnDisable()
+    {
+        CancelInvoke("DeactivateProjectile");
+    }
+
     void DeactivateProjectile()
     {
         if (gameObject.activeInHierarchy)
