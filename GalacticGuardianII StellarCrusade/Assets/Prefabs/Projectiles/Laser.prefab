@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 202622008799299301}
   - component: {fileID: 6635406002918394899}
   - component: {fileID: 7826402117760666522}
+  - component: {fileID: 8126500717307094722}
   m_Layer: 6
   m_Name: Laser
   m_TagString: Projectile
@@ -116,7 +117,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0048968494, y: 0.10498196}
@@ -177,3 +178,16 @@ MonoBehaviour:
   boomEffect: {fileID: 0}
   minDamage: 9
   maxDamage: 9
+--- !u!114 &8126500717307094722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882653596776917413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05816f74bc5cc824997cb4babf7d9e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3

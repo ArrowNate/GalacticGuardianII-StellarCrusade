@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7039209450564684125}
   - component: {fileID: 3798851375710514432}
   - component: {fileID: 1203742134506446781}
+  - component: {fileID: -1351036897627162122}
   m_Layer: 6
   m_Name: Heavy Missile
   m_TagString: Projectile
@@ -143,7 +144,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -199,3 +200,16 @@ MonoBehaviour:
   boomEffect: {fileID: 4660563033224423487, guid: 6d52b5f4fbd944726ba966534ac005ac, type: 3}
   minDamage: 40
   maxDamage: 60
+--- !u!114 &-1351036897627162122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508341761331907082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05816f74bc5cc824997cb4babf7d9e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
