@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 2109337001627166813}
   - component: {fileID: 5051109413479326028}
   - component: {fileID: 6598276873776317236}
+  - component: {fileID: -3570963449546676883}
   m_Layer: 8
   m_Name: Blaster Pool 2
   m_TagString: Projectile
@@ -256,6 +257,19 @@ MonoBehaviour:
   boomEffect: {fileID: 0}
   minDamage: 22
   maxDamage: 24
+--- !u!114 &-3570963449546676883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883590516819432750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05816f74bc5cc824997cb4babf7d9e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1.3
 --- !u!1 &5756236276039554014
 GameObject:
   m_ObjectHideFlags: 0

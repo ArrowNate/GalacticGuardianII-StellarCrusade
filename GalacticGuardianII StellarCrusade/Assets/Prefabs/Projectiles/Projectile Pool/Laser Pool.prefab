@@ -179,8 +179,9 @@ GameObject:
   - component: {fileID: 2973927182886908019}
   - component: {fileID: 3632773936911407942}
   - component: {fileID: 9204859271900943505}
-  - component: {fileID: 7363675160026664160}
   - component: {fileID: 2640359353755275662}
+  - component: {fileID: 7363675160026664160}
+  - component: {fileID: 463494311032318132}
   m_Layer: 8
   m_Name: Laser Pool
   m_TagString: Projectile
@@ -277,24 +278,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42554379, y: 1.7752299}
   m_EdgeRadius: 0
---- !u!114 &7363675160026664160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8155175071701837203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 45
-  spawnSound: {fileID: 8300000, guid: c935c8501ca8cea42bcc44106293aee9, type: 3}
-  destroySound: {fileID: 0}
-  boomEffect: {fileID: 0}
-  minDamage: 9
-  maxDamage: 9
 --- !u!61 &2640359353755275662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -340,3 +323,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42554379, y: 1.7752299}
   m_EdgeRadius: 0
+--- !u!114 &7363675160026664160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155175071701837203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 45
+  spawnSound: {fileID: 8300000, guid: c935c8501ca8cea42bcc44106293aee9, type: 3}
+  destroySound: {fileID: 0}
+  boomEffect: {fileID: 0}
+  minDamage: 9
+  maxDamage: 9
+--- !u!114 &463494311032318132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155175071701837203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05816f74bc5cc824997cb4babf7d9e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1.35

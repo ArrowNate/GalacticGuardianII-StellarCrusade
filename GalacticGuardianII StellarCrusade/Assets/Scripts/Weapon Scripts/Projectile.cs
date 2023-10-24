@@ -9,8 +9,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private AudioClip destroySound;
     [SerializeField] private GameObject boomEffect;
 
-    public float minDamage = 10f;
-    public float maxDamage = 30f;
+    [SerializeField] private float minDamage = 10f;
+    [SerializeField] private float maxDamage = 30f;
 
     private float projectileDamage;
 
