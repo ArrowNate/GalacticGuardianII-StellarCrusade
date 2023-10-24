@@ -1720,6 +1720,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+--- !u!1001 &1106804814563089892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.213405
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.788748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5186125109685150845, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_Name
+      value: Plasma Predator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+--- !u!1001 &2859863455912449165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171672576634960872, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_Name
+      value: Meteor Maelstrom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
 --- !u!1001 &3927996212168776760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2062,3 +2176,5 @@ SceneRoots:
   - {fileID: 515881010}
   - {fileID: 640159051}
   - {fileID: 146525117}
+  - {fileID: 2859863455912449165}
+  - {fileID: 1106804814563089892}
