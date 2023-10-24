@@ -360,6 +360,10 @@ GameObject:
   - component: {fileID: 3778033718741196672}
   - component: {fileID: 3777198214864972390}
   - component: {fileID: 2202168052089195119}
+  - component: {fileID: 5430518101402253579}
+  - component: {fileID: 8393181643850322393}
+  - component: {fileID: 5936388736394285564}
+  - component: {fileID: 6422915506728242363}
   m_Layer: 7
   m_Name: Weapons
   m_TagString: Untagged
@@ -423,6 +427,82 @@ MonoBehaviour:
   projectilePool: []
   projectileHolder: {fileID: 0}
   keyPressToShoot: 323
+  projectileSpawnPoint: {fileID: 8302910301675864251}
+  shootWaitTime: 0.2
+  isEnemy: 0
+--- !u!114 &5430518101402253579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300097968769790289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1883590516819432750, guid: 975d2a91c0e8a794582ca01145064df6, type: 3}
+  projectilePool: []
+  projectileHolder: {fileID: 0}
+  keyPressToShoot: 324
+  projectileSpawnPoint: {fileID: 8302910301675864251}
+  shootWaitTime: 0.2
+  isEnemy: 0
+--- !u!114 &8393181643850322393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300097968769790289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8155175071701837203, guid: 04c1a408e3fd50942ad3eb1104c2bd04, type: 3}
+  projectilePool: []
+  projectileHolder: {fileID: 0}
+  keyPressToShoot: 306
+  projectileSpawnPoint: {fileID: 8302910301675864251}
+  shootWaitTime: 0.2
+  isEnemy: 0
+--- !u!114 &5936388736394285564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300097968769790289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7590460695688776528, guid: 6e8bb40d86c05c546898c963e0534a94, type: 3}
+  projectilePool: []
+  projectileHolder: {fileID: 0}
+  keyPressToShoot: 102
+  projectileSpawnPoint: {fileID: 8302910301675864251}
+  shootWaitTime: 0.2
+  isEnemy: 0
+--- !u!114 &6422915506728242363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300097968769790289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7508341761331907082, guid: 77a8cbb34dc0af14ca7fd8d95588c677, type: 3}
+  projectilePool: []
+  projectileHolder: {fileID: 0}
+  keyPressToShoot: 32
   projectileSpawnPoint: {fileID: 8302910301675864251}
   shootWaitTime: 0.2
   isEnemy: 0
@@ -497,7 +577,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 284854895
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: c0925c40d16669249b07548781c7f70f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -712,7 +792,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 284854895
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7520b6b8a4b86ac4090b3f6e1c9159aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
