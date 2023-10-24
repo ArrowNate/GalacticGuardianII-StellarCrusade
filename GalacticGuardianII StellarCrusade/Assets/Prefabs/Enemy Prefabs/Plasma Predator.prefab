@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 3003556235534014423}
   - component: {fileID: 5677528001077476359}
   - component: {fileID: 417959776427253746}
+  - component: {fileID: -7108997371441391828}
   m_Layer: 9
   m_Name: Plasma Predator
   m_TagString: Enemy
@@ -403,6 +404,19 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 1351753795194681700}
   shootWaitTime: 0.2
   isEnemy: 1
+--- !u!114 &-7108997371441391828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186125109685150845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69308652c6c2418458306e6743b4fe85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlipped: 1
 --- !u!1001 &1549830816329247363
 PrefabInstance:
   m_ObjectHideFlags: 0
