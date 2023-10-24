@@ -41,7 +41,7 @@ public class Projectile : MonoBehaviour
 
         if (collision.CompareTag(TagManager.ENEMY_TAG) || collision.CompareTag(TagManager.METEOR_TAG))
         {
-            Debug.Log("Enemy Hit");
+            collision.GetComponent<EnemyHealth>().TakeDamage(projectileDamage, 0);
         }
 
         if (!collision.CompareTag(TagManager.UNTAGGED_TAG) && !collision.CompareTag(TagManager.COLLECTABLE_TAG))
