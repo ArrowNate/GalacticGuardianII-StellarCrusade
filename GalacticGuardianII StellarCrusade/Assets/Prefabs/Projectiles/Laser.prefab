@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd140733d95dc4da25fbff98486cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: -45
   spawnSound: {fileID: 8300000, guid: c935c8501ca8cea42bcc44106293aee9, type: 3}
   destroySound: {fileID: 0}
   boomEffect: {fileID: 0}

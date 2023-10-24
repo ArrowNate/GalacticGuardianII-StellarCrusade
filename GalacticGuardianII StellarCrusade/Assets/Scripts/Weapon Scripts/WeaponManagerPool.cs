@@ -100,6 +100,10 @@ public class WeaponManagerPool : MonoBehaviour
 
     void HandleEnemyShooting()
     {
+        if (!isEnemy || !canShoot)
+            return;
 
+        ResetShootingTimer();
+        GetObjectFromPoolOrSpawnNewOne();
     }
 }

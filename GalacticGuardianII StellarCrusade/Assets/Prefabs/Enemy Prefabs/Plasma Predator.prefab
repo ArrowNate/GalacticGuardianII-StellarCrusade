@@ -43,6 +43,10 @@ GameObject:
   - component: {fileID: 2850435230334052541}
   - component: {fileID: 135492621657623762}
   - component: {fileID: 2194477542942985921}
+  - component: {fileID: 7054821827854713976}
+  - component: {fileID: 3003556235534014423}
+  - component: {fileID: 5677528001077476359}
+  - component: {fileID: 417959776427253746}
   m_Layer: 9
   m_Name: Plasma Predator
   m_TagString: Enemy
@@ -307,6 +311,98 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7054821827854713976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186125109685150845}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7834b91b0323841bf3c7c2af0a99a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveOnX: 0
+  moveOnY: 0
+  moveLeft: 0
+  moveUp: 0
+  moveSpeed: 8
+  horizontalMovementThreshold: 8
+  verticalMovementThreshold: 6
+--- !u!114 &3003556235534014423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186125109685150845}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b7b3a466c9666438432d1b2043f337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 15
+  moveRandomly: 1
+--- !u!114 &5677528001077476359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186125109685150845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773acb6235702b24098d56db99d713bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -50
+  maxX: 50
+  minY: 0
+  maxY: 25
+  moveSpeed: 15
+--- !u!114 &417959776427253746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186125109685150845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 3257222812653797247, guid: 61fd4da100f0b2f43bf05a35f9f39f75, type: 3}
+  projectilePool: []
+  projectileHolder: {fileID: 0}
+  keyPressToShoot: 0
+  projectileSpawnPoint: {fileID: 1351753795194681700}
+  shootWaitTime: 0.2
+  isEnemy: 1
 --- !u!1001 &1549830816329247363
 PrefabInstance:
   m_ObjectHideFlags: 0
