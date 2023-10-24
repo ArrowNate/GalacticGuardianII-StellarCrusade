@@ -67,6 +67,30 @@ public class EnemyMovement : MonoBehaviour
 
     void HandleEnemyVerticalMovement()
     {
+        if (!moveOnY)
+            return;
 
+        if (moveUp)
+        {
+            tempMovementVertical = transform.position;
+            tempMovementVertical.y += moveSpeed * Time.deltaTime;
+            transform.position = tempMovementVertical;
+
+            if (tempMovementVertical.y > maxY)
+            {
+                moveUp = false;
+            }
+        }
+        else
+        {
+            tempMovementVertical = transform.position;
+            tempMovementVertical.y -= moveSpeed * Time.deltaTime;
+            transform.position = tempMovementVertical;
+
+            if (tempMovementVertical.y < minY)
+            {
+                moveUp = true;
+            }
+        }
     }
 }

@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7834b91b0323841bf3c7c2af0a99a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveOnX: 1
+  moveOnX: 0
   moveOnY: 0
   moveLeft: 0
   moveUp: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7834b91b0323841bf3c7c2af0a99a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveOnX: 1
+  moveOnX: 0
   moveOnY: 0
   moveLeft: 0
   moveUp: 0
