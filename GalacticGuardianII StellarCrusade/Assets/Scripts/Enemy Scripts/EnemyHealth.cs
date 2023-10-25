@@ -18,11 +18,13 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
         else
         {
-
+            Instantiate(hitEffect, transform.position, Quaternion.identity);
         }
 
         SetHealthBar();
