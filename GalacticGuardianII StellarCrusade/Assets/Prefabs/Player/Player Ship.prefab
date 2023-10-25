@@ -498,7 +498,7 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   keyPressToShoot: 306
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 0.4
+  shootWaitTime: 0.5
   isEnemy: 0
 --- !u!114 &5936388736394285564
 MonoBehaviour:
@@ -517,7 +517,7 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   keyPressToShoot: 102
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 1
+  shootWaitTime: 4
   isEnemy: 0
 --- !u!114 &6422915506728242363
 MonoBehaviour:
@@ -536,7 +536,7 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   keyPressToShoot: 32
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 2
+  shootWaitTime: 5
   isEnemy: 0
 --- !u!114 &2062445033370133217
 MonoBehaviour:

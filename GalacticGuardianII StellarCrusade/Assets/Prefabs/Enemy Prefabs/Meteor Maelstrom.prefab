@@ -250,13 +250,14 @@ GameObject:
   - component: {fileID: 5121196288850692632}
   - component: {fileID: -6638435948629981173}
   - component: {fileID: 3659584632779228455}
+  - component: {fileID: 4642934307160384944}
   m_Layer: 9
   m_Name: Meteor Maelstrom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5163258206383760678
 Transform:
   m_ObjectHideFlags: 0
@@ -673,9 +674,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 8682458370831361799}
-  hitEffect: {fileID: 0}
-  destroyEffect: {fileID: 0}
+  hitEffect: {fileID: 1517397130360990, guid: 7a03fdf14f0be483c97b353d57840bf8, type: 3}
+  destroyEffect: {fileID: 1809984191729300, guid: 7ff64416fb649436baa5c0eec81a2882, type: 3}
   health: 100
+--- !u!114 &4642934307160384944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9171672576634960872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb3c1d6a7d39374d8fe535d0366f9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 8955483087636763798, guid: 7c5448e263085c34f8bfa1a729d87ac6, type: 3}
+  - {fileID: 5307693098244897553, guid: f9dbef3f4eb31bf4eae2b61cc093c22a, type: 3}
+  - {fileID: 3430950445896978783, guid: 5c38e46631e2a2741af990ee2ab50036, type: 3}
+  - {fileID: 4233261157386575873, guid: 4aa55898959ade64eac98597511a4003, type: 3}
+  - {fileID: 1298253755702179826, guid: 39dc47d0dc0a9c6459ac7eb64b8c40fd, type: 3}
 --- !u!1001 &2030393795895909648
 PrefabInstance:
   m_ObjectHideFlags: 0

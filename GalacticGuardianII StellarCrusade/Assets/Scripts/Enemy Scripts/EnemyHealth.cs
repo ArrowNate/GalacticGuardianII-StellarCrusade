@@ -9,7 +9,14 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject destroyEffect;
     [SerializeField] private float health = 100f;
 
+    private DropCollectables dropCollectables;
+
     private Vector3 healthBarScale;
+
+    private void Awake()
+    {
+        dropCollectables = GetComponent<DropCollectables>();
+    }
 
     public void TakeDamage(float damageAmount, float damageResistance)
     {
@@ -21,6 +28,8 @@ public class EnemyHealth : MonoBehaviour
             Instantiate(destroyEffect, transform.position, Quaternion.identity);
 
             SoundManager.instance.PlayDestroySound();
+
+            dropCollectables.CheckToSpawnCollectable();
 
             Destroy(gameObject);
         }
