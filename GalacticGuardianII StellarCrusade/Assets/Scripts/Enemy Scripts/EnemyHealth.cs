@@ -20,11 +20,14 @@ public class EnemyHealth : MonoBehaviour
         {
             Instantiate(destroyEffect, transform.position, Quaternion.identity);
 
+            SoundManager.instance.PlayDestroySound();
+
             Destroy(gameObject);
         }
         else
         {
             Instantiate(hitEffect, transform.position, Quaternion.identity);
+            SoundManager.instance.PlayDamageSound();
         }
 
         SetHealthBar();

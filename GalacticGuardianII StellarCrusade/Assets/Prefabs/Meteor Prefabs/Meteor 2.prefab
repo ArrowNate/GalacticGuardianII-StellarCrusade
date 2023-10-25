@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7161064891250359961}
   - component: {fileID: 462812388451825635}
   - component: {fileID: 2408658018280123510}
+  - component: {fileID: 9023704853753899152}
   m_Layer: 9
   m_Name: Meteor 2
   m_TagString: Meteor
@@ -299,3 +300,19 @@ MonoBehaviour:
   zRotation: 0
   moveOnX: 0
   moveOnY: 1
+--- !u!114 &9023704853753899152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305996410435167315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397ff51e415d3a84a8c588aa3cf0b11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  hitEffect: {fileID: 1319861625924068, guid: 494f5858d0b1f415ea3401e84732aa08, type: 3}
+  destroyEffect: {fileID: 1519377103190442, guid: 0579293ac60a84b4b90e9ac25c93b30e, type: 3}
+  health: 100

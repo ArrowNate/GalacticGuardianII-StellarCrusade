@@ -1,16 +1,16 @@
 public static class TagManager
 {
-    public static string PLAYER_PROJECTILE_HOLDER_TAG = "PlayerProjectileHolder";
-    public static string ENEMY_PROJECTILE_HOLDER_TAG = "EnemyProjectileHolder";
+    public const string PLAYER_PROJECTILE_HOLDER_TAG = "PlayerProjectileHolder";
+    public const string ENEMY_PROJECTILE_HOLDER_TAG = "EnemyProjectileHolder";
 
-    public static string PROJECTILE_TAG = "Projectile";
+    public const string PROJECTILE_TAG = "Projectile";
 
-    public static string ENEMY_TAG = "Enemy";
-    public static string PLAYER_TAG = "Player";
-    public static string METEOR_TAG = "Meteor";
+    public const string ENEMY_TAG = "Enemy";
+    public const string PLAYER_TAG = "Player";
+    public const string METEOR_TAG = "Meteor";
 
-    public static string UNTAGGED_TAG = "Untagged";
+    public const string UNTAGGED_TAG = "Untagged";
 
-    public static string PLAYER_HEALTH_SLIDER_TAG = "PlayerHealth";
-    public static string COLLECTABLE_TAG = "Collectable";
+    public const string PLAYER_HEALTH_SLIDER_TAG = "PlayerHealth";
+    public const string COLLECTABLE_TAG = "Collectable";
 }

@@ -123,6 +123,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &108413696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108413698}
+  - component: {fileID: 108413697}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &108413697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108413696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb426561df0bd84bb7675211efab668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpSound1: {fileID: 8300000, guid: 7402c29a231500341bf0dc39829cd36d, type: 3}
+  pickUpSound2: {fileID: 8300000, guid: 8e8fc8ca9d7cf1245af77a62c8a26acb, type: 3}
+  destroySound1: {fileID: 8300000, guid: 2e3be76c5c8ecf34b9d24d39d8991e39, type: 3}
+  destroySound2: {fileID: 8300000, guid: 65c37e8af8804ef4fbf6d1ae6640f6c2, type: 3}
+  damageSound1: {fileID: 8300000, guid: ba0e0181da18df440911478ddb5c6989, type: 3}
+  damageSound2: {fileID: 8300000, guid: 3c01cb78fba2ac64ab15369ea11d7d76, type: 3}
+--- !u!4 &108413698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108413696}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146525115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1788,7 @@ PrefabInstance:
       objectReference: {fileID: 1762303578077224, guid: 9685a397aac114db9889c2a983af24e6, type: 3}
     - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.213405
+      value: -32.433403
       objectReference: {fileID: 0}
     - target: {fileID: 1812972446521559188, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1803,7 +1853,7 @@ PrefabInstance:
       objectReference: {fileID: 1809984191729300, guid: 7ff64416fb649436baa5c0eec81a2882, type: 3}
     - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.58
+      value: -19.8
       objectReference: {fileID: 0}
     - target: {fileID: 5163258206383760678, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1864,3 +1914,4 @@ SceneRoots:
   - {fileID: 146525117}
   - {fileID: 2859863455912449165}
   - {fileID: 1106804814563089892}
+  - {fileID: 108413698}
