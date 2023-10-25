@@ -60,3 +60,6 @@ TagManager:
   - name: Health
     uniqueID: 1581459487
     locked: 0
+  - name: Background
+    uniqueID: 3849395013
+    locked: 0
