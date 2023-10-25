@@ -56,7 +56,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1812972446521559188
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   healthBar: {fileID: 8563846276433672390}
   hitEffect: {fileID: 1705349776823396, guid: 541b040e168f245cf9f2f510780440fd, type: 3}
   destroyEffect: {fileID: 1762303578077224, guid: 9685a397aac114db9889c2a983af24e6, type: 3}
-  health: 100
+  health: 50
 --- !u!114 &4790588045208700284
 MonoBehaviour:
   m_ObjectHideFlags: 0

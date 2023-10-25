@@ -35,6 +35,8 @@ public class EnemySpawner : MonoBehaviour
 
             spawnedEnemies.Add(newEnemy);
         }
+
+        GameplayUIController.instance.SetInfoUI(1);
     }
 
     IEnumerator _SpawnWave(float waitTime)
