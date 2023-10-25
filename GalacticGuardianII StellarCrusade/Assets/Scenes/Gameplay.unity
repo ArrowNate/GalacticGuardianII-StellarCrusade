@@ -1854,6 +1854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plasma Predator
       objectReference: {fileID: 0}
+    - target: {fileID: 5186125109685150845, guid: bdb3014d4fa7f1848a2496afd3e2a597, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1918,6 +1922,10 @@ PrefabInstance:
     - target: {fileID: 9171672576634960872, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
       propertyPath: m_Name
       value: Meteor Maelstrom
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171672576634960872, guid: 0b6597155cc07df4e95f0385bbebe8eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

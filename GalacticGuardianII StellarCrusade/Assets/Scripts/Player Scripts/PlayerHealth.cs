@@ -33,4 +33,13 @@ public class PlayerHealth : MonoBehaviour
             SoundManager.instance.PlayDamageSound();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag(TagManager.METEOR_TAG))
+        {
+            TakeDamage(Random.Range(20, 40));
+            Destroy(collision.gameObject);
+        }
+    }
 }
