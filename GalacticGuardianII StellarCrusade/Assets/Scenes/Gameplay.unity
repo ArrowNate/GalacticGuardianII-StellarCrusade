@@ -1701,14 +1701,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 4901052865387416195, guid: 3ee295bf2d344ae409694809db866029, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4901052865387416195, guid: 3ee295bf2d344ae409694809db866029, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 284854895
-      objectReference: {fileID: 0}
     - target: {fileID: 5430518101402253579, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: projectileHolder
       value: 
@@ -1754,13 +1746,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5936388736394285564, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: shootWaitTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936388736394285564, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: projectileHolder
       value: 
       objectReference: {fileID: 1618917974}
     - target: {fileID: 6422915506728242363, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: shootWaitTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422915506728242363, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: projectileHolder
       value: 
       objectReference: {fileID: 1618917974}
+    - target: {fileID: 8393181643850322393, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      propertyPath: shootWaitTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8393181643850322393, guid: 3ee295bf2d344ae409694809db866029, type: 3}
       propertyPath: projectileHolder
       value: 
@@ -1768,32 +1772,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2298270090898390158, guid: 3ee295bf2d344ae409694809db866029, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 970959106251547693}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee295bf2d344ae409694809db866029, type: 3}
---- !u!1 &970959106251547692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2298270090898390158, guid: 3ee295bf2d344ae409694809db866029, type: 3}
-  m_PrefabInstance: {fileID: 970959106251547691}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &970959106251547693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970959106251547692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7de2357832428574b983a7822cbe36eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerExplosionFX: {fileID: 1493211344075380, guid: d050d6f0895e64926bcad437c907f1a4, type: 3}
-  playerDamageFX: {fileID: 1929564232946276, guid: ad5d54c9542814801ab5b2860b43e093, type: 3}
-  playerMaxHealth: 100
-  playerHealth: 0
 --- !u!1001 &1106804814563089892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1873,11 +1853,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3285309638026105829, guid: 7c5448e263085c34f8bfa1a729d87ac6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.96
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3285309638026105829, guid: 7c5448e263085c34f8bfa1a729d87ac6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21414
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 3285309638026105829, guid: 7c5448e263085c34f8bfa1a729d87ac6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1915,6 +1895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blaster 1 Collectable
       objectReference: {fileID: 0}
+    - target: {fileID: 9182011478149758220, guid: 7c5448e263085c34f8bfa1a729d87ac6, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1928,6 +1912,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4149628547781675329, guid: f9dbef3f4eb31bf4eae2b61cc093c22a, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5307693098244897553, guid: f9dbef3f4eb31bf4eae2b61cc093c22a, type: 3}
       propertyPath: m_Name
       value: Blaster 2 Collectable
@@ -1938,7 +1926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9071010796120838396, guid: f9dbef3f4eb31bf4eae2b61cc093c22a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21414
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 9071010796120838396, guid: f9dbef3f4eb31bf4eae2b61cc093c22a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1987,15 +1975,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4233261157386575873, guid: 4aa55898959ade64eac98597511a4003, type: 3}
       propertyPath: m_Name
-      value: Missile Collectable
+      value: Heavy Missile Collectable
       objectReference: {fileID: 0}
     - target: {fileID: 7106930382368064859, guid: 4aa55898959ade64eac98597511a4003, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.56
+      value: -26.1
       objectReference: {fileID: 0}
     - target: {fileID: 7106930382368064859, guid: 4aa55898959ade64eac98597511a4003, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21414
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 7106930382368064859, guid: 4aa55898959ade64eac98597511a4003, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2046,13 +2034,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Collectable
       objectReference: {fileID: 0}
+    - target: {fileID: 4942078802523232633, guid: 5c38e46631e2a2741af990ee2ab50036, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6319118893661962229, guid: 5c38e46631e2a2741af990ee2ab50036, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.42
+      value: -11.9
       objectReference: {fileID: 0}
     - target: {fileID: 6319118893661962229, guid: 5c38e46631e2a2741af990ee2ab50036, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21414
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 6319118893661962229, guid: 5c38e46631e2a2741af990ee2ab50036, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2170,15 +2162,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1298253755702179826, guid: 39dc47d0dc0a9c6459ac7eb64b8c40fd, type: 3}
       propertyPath: m_Name
-      value: Rocket Collectable
+      value: Missile Collectable
       objectReference: {fileID: 0}
     - target: {fileID: 4620002754782475545, guid: 39dc47d0dc0a9c6459ac7eb64b8c40fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.4317017
+      value: -40.4
       objectReference: {fileID: 0}
     - target: {fileID: 4620002754782475545, guid: 39dc47d0dc0a9c6459ac7eb64b8c40fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21414
+      value: 26.2
       objectReference: {fileID: 0}
     - target: {fileID: 4620002754782475545, guid: 39dc47d0dc0a9c6459ac7eb64b8c40fd, type: 3}
       propertyPath: m_LocalPosition.z

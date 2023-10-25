@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum CollectableType
 {
-    Health, Blaster1, Blaster2, Rocket, Missile
+    Health, Blaster1, Blaster2, Missile, HeavyMissile
 }
 
 public class Collectables : MonoBehaviour

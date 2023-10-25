@@ -128,6 +128,8 @@ GameObject:
   - component: {fileID: 3551888617769301793}
   - component: {fileID: 657001727108331882}
   - component: {fileID: 7389865441641840120}
+  - component: {fileID: 7783834651325274375}
+  - component: {fileID: 9185378068376190568}
   m_Layer: 7
   m_Name: Player Ship
   m_TagString: Player
@@ -318,6 +320,35 @@ MonoBehaviour:
   - {fileID: 641761693247900297}
   - {fileID: 939801835040386369}
   enginePower: 3
+--- !u!114 &7783834651325274375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2298270090898390158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de2357832428574b983a7822cbe36eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerExplosionFX: {fileID: 1493211344075380, guid: d050d6f0895e64926bcad437c907f1a4, type: 3}
+  playerDamageFX: {fileID: 1929564232946276, guid: ad5d54c9542814801ab5b2860b43e093, type: 3}
+  playerMaxHealth: 100
+  playerHealth: 0
+--- !u!114 &9185378068376190568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2298270090898390158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d2eacfb330a974fa47a499ac280511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponUpgrade: {fileID: 2062445033370133217}
 --- !u!1 &2755487266089563667
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +395,7 @@ GameObject:
   - component: {fileID: 8393181643850322393}
   - component: {fileID: 5936388736394285564}
   - component: {fileID: 6422915506728242363}
+  - component: {fileID: 2062445033370133217}
   m_Layer: 7
   m_Name: Weapons
   m_TagString: Untagged
@@ -423,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8576351636510225486, guid: 19e836c1f05154642a1fb9f24564b9c1, type: 3}
+  projectile: {fileID: 8155175071701837203, guid: 04c1a408e3fd50942ad3eb1104c2bd04, type: 3}
   projectilePool: []
   projectileHolder: {fileID: 0}
   keyPressToShoot: 323
@@ -437,17 +469,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3300097968769790289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1883590516819432750, guid: 975d2a91c0e8a794582ca01145064df6, type: 3}
+  projectile: {fileID: 8576351636510225486, guid: 19e836c1f05154642a1fb9f24564b9c1, type: 3}
   projectilePool: []
   projectileHolder: {fileID: 0}
   keyPressToShoot: 324
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 0.2
+  shootWaitTime: 0.4
   isEnemy: 0
 --- !u!114 &8393181643850322393
 MonoBehaviour:
@@ -456,17 +488,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3300097968769790289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8155175071701837203, guid: 04c1a408e3fd50942ad3eb1104c2bd04, type: 3}
+  projectile: {fileID: 1883590516819432750, guid: 975d2a91c0e8a794582ca01145064df6, type: 3}
   projectilePool: []
   projectileHolder: {fileID: 0}
   keyPressToShoot: 306
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 0.2
+  shootWaitTime: 0.4
   isEnemy: 0
 --- !u!114 &5936388736394285564
 MonoBehaviour:
@@ -475,7 +507,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3300097968769790289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
   m_Name: 
@@ -485,7 +517,7 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   keyPressToShoot: 102
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 0.2
+  shootWaitTime: 1
   isEnemy: 0
 --- !u!114 &6422915506728242363
 MonoBehaviour:
@@ -494,7 +526,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3300097968769790289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c76874993074e514f815045b3bcaec44, type: 3}
   m_Name: 
@@ -504,8 +536,25 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   keyPressToShoot: 32
   projectileSpawnPoint: {fileID: 8302910301675864251}
-  shootWaitTime: 0.2
+  shootWaitTime: 2
   isEnemy: 0
+--- !u!114 &2062445033370133217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300097968769790289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e503b69fe06d4246ae5592cb1afab40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 5430518101402253579}
+  - {fileID: 8393181643850322393}
+  - {fileID: 5936388736394285564}
+  - {fileID: 6422915506728242363}
 --- !u!1 &3354633447755920434
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +626,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 284854895
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: c0925c40d16669249b07548781c7f70f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -792,7 +841,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 284854895
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7520b6b8a4b86ac4090b3f6e1c9159aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -913,8 +962,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 284854895
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: af734a5cf3d515f408d0e3c6443d83da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
