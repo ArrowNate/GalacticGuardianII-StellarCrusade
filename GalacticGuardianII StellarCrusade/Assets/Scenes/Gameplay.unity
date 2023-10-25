@@ -1768,8 +1768,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2298270090898390158, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 970959106251547693}
   m_SourcePrefab: {fileID: 100100000, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+--- !u!1 &970959106251547692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2298270090898390158, guid: 3ee295bf2d344ae409694809db866029, type: 3}
+  m_PrefabInstance: {fileID: 970959106251547691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &970959106251547693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970959106251547692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de2357832428574b983a7822cbe36eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerExplosionFX: {fileID: 1493211344075380, guid: d050d6f0895e64926bcad437c907f1a4, type: 3}
+  playerDamageFX: {fileID: 1929564232946276, guid: ad5d54c9542814801ab5b2860b43e093, type: 3}
+  playerMaxHealth: 100
+  playerHealth: 0
 --- !u!1001 &1106804814563089892
 PrefabInstance:
   m_ObjectHideFlags: 0
