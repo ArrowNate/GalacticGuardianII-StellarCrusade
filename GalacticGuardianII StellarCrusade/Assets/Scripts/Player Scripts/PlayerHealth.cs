@@ -9,9 +9,11 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float playerMaxHealth = 100f;
     [SerializeField] private float playerHealth;
 
+    private Collectables collectables;
+
     private void Awake()
     {
-        playerHealth = playerMaxHealth;
+        playerHealth = playerMaxHealth / 2;
     }
 
     public void TakeDamage(float damageAmount)
@@ -36,6 +38,23 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag(TagManager.COLLECTABLE_TAG))
+        {
+            collectables = collision.GetComponent<Collectables>();
+
+            if (collectables.type == CollectableType.Health)
+            {
+                float healthValue = collectables.GetHealthValue();
+
+                playerHealth += healthValue;
+
+                if (playerHealth > playerMaxHealth)
+                    playerHealth = playerMaxHealth;
+
+                Destroy(collision.gameObject);
+            }
+        }
+
         if (collision.CompareTag(TagManager.METEOR_TAG))
         {
             TakeDamage(Random.Range(20, 40));

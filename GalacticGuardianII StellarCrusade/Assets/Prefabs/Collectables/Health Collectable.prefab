@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1193451014955889848}
   - component: {fileID: 4331000259605728299}
   - component: {fileID: 8423682991029335708}
+  - component: {fileID: 4942078802523232633}
   m_Layer: 0
   m_Name: Health Collectable
   m_TagString: Collectable
@@ -148,3 +149,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4942078802523232633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430950445896978783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45885eb19864cea4db9ec3b01f63c3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  moveSpeed: 5
+  healthValue: 0
