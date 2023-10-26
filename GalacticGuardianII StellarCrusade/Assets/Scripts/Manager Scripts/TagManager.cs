@@ -13,4 +13,7 @@ public static class TagManager
 
     public const string PLAYER_HEALTH_SLIDER_TAG = "Player Health";
     public const string COLLECTABLE_TAG = "Collectable";
+
+    public const string GAMEPLAY_LEVEL_NAME = "Gameplay";
+    public const string MAIN_MENU_LEVEL_NAME = "Main Menu";
 }

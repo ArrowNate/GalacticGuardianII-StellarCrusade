@@ -31,8 +31,20 @@ public class GameoverUIController : MonoBehaviour
         int meteorsDestroyedFinal = GameplayUIController.instance.GetMeteorsDestroyedCount();
         int waveCountFinal = GameplayUIController.instance.GetWaveCount();
 
+        waveCountFinal--;
+
         shipsDestroyedFinalInfoText.text = " X" + shipsDestroyedFinal;
         meteorsDestroyedFinalInfoText.text = " X" + meteorsDestroyedFinal;
         waveFinalInfoText.text = "WAVE - " + waveCountFinal;
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(TagManager.GAMEPLAY_LEVEL_NAME);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(TagManager.MAIN_MENU_LEVEL_NAME);
     }
 }
