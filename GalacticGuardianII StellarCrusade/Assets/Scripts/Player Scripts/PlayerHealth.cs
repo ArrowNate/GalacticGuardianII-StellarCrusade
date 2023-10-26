@@ -36,6 +36,8 @@ public class PlayerHealth : MonoBehaviour
 
             SoundManager.instance.PlayDestroySound();
 
+            GameoverUIController.instance.GameoverPanel();
+
             Destroy(gameObject);
         }
         else

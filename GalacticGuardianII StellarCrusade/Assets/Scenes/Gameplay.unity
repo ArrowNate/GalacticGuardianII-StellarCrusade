@@ -356,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &123573999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3534,6 +3534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607422066}
   - component: {fileID: 1607422065}
+  - component: {fileID: 1607422067}
   m_Layer: 0
   m_Name: Gameplay UI Controller
   m_TagString: Untagged
@@ -3574,6 +3575,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607422067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607422064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f17f61dc6540c449098dec476ca759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInfoCanvas: {fileID: 272453939}
+  shipsAndMeteorInfoCanvas: {fileID: 1158613313}
+  gameOverCanvas: {fileID: 123574001}
+  shipsDestroyedFinalInfoText: {fileID: 1612035161}
+  meteorsDestroyedFinalInfoText: {fileID: 563337530}
+  waveFinalInfoText: {fileID: 171735244}
+  shipsDestroyedHighscoreText: {fileID: 1746650905}
+  meteorsDestroyedHighscoreText: {fileID: 1787248705}
+  waveHighscoreText: {fileID: 1513200123}
 --- !u!1 &1612035159
 GameObject:
   m_ObjectHideFlags: 0
