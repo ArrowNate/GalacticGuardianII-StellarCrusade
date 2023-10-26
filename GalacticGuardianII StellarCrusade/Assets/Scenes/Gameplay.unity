@@ -229,10 +229,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpSound1: {fileID: 8300000, guid: 7402c29a231500341bf0dc39829cd36d, type: 3}
   pickUpSound2: {fileID: 8300000, guid: 8e8fc8ca9d7cf1245af77a62c8a26acb, type: 3}
-  destroySound1: {fileID: 8300000, guid: 2e3be76c5c8ecf34b9d24d39d8991e39, type: 3}
-  destroySound2: {fileID: 8300000, guid: 65c37e8af8804ef4fbf6d1ae6640f6c2, type: 3}
   damageSound1: {fileID: 8300000, guid: ba0e0181da18df440911478ddb5c6989, type: 3}
   damageSound2: {fileID: 8300000, guid: 3c01cb78fba2ac64ab15369ea11d7d76, type: 3}
+  destroySound1: {fileID: 8300000, guid: 2e3be76c5c8ecf34b9d24d39d8991e39, type: 3}
+  destroySound2: {fileID: 8300000, guid: 65c37e8af8804ef4fbf6d1ae6640f6c2, type: 3}
 --- !u!4 &108413698
 Transform:
   m_ObjectHideFlags: 0
@@ -453,6 +453,7 @@ MonoBehaviour:
   - {fileID: 1528565899}
   - {fileID: 1949338040}
   spawnWaitTime: 0
+  spawnedEnemies: []
 --- !u!4 &146525117
 Transform:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private float spawnWaitTime = 2f;
 
-    private List<GameObject> spawnedEnemies = new List<GameObject>();
+    [SerializeField] private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     private void Awake()
     {
@@ -43,5 +43,13 @@ public class EnemySpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         SpawnNewWaveOfEnemies();
+    }
+
+    public void CheckToSpawnNewWave(GameObject shipToRemove)
+    {
+        spawnedEnemies.Remove(shipToRemove);
+
+        if (spawnedEnemies.Count == 0)
+            StartCoroutine(_SpawnWave(spawnWaitTime));
     }
 }

@@ -32,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
             if (gameObject.CompareTag(TagManager.ENEMY_TAG))
             {
                 GameplayUIController.instance.SetInfoUI(2);
+                EnemySpawner.instance.CheckToSpawnNewWave(gameObject);
             }
             else if (gameObject.CompareTag(TagManager.METEOR_TAG))
             {
