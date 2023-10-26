@@ -11,6 +11,6 @@ public static class TagManager
 
     public const string UNTAGGED_TAG = "Untagged";
 
-    public const string PLAYER_HEALTH_SLIDER_TAG = "PlayerHealth";
+    public const string PLAYER_HEALTH_SLIDER_TAG = "Player Health";
     public const string COLLECTABLE_TAG = "Collectable";
 }

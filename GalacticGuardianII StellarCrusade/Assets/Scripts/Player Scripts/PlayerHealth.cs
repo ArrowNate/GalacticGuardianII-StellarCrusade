@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -11,14 +12,23 @@ public class PlayerHealth : MonoBehaviour
 
     private Collectables collectables;
 
+    private Slider playerHealthSlider;
+
     private void Awake()
     {
-        playerHealth = playerMaxHealth / 2;
+        playerHealthSlider = GameObject.FindWithTag(TagManager.PLAYER_HEALTH_SLIDER_TAG).GetComponent<Slider>();
+
+        playerHealth = playerMaxHealth;
+
+        playerHealthSlider.minValue = 0;
+        playerHealthSlider.maxValue = playerHealth;
+        playerHealthSlider.value = playerHealth;
     }
 
     public void TakeDamage(float damageAmount)
     {
         playerHealth -= damageAmount;
+        playerHealthSlider.value = playerHealth;
 
         if (playerHealth <= 0)
         {
@@ -47,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
                 float healthValue = collectables.GetHealthValue();
 
                 playerHealth += healthValue;
+                playerHealthSlider.value = playerHealth;
 
                 if (playerHealth > playerMaxHealth)
                     playerHealth = playerMaxHealth;
