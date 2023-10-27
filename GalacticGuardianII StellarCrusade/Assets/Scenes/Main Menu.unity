@@ -351,7 +351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WAVES
+  m_Text: 'WAVES - '
 --- !u!222 &28193877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2090,7 +2090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X 0
+  m_Text: 0
 --- !u!222 &885055086
 CanvasRenderer:
   m_ObjectHideFlags: 0

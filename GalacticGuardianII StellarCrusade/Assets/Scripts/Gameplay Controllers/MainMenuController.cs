@@ -28,7 +28,9 @@ public class MainMenuController : MonoBehaviour
 
     void DisplayHighscore()
     {
-
+        shipsDestroyedHighscore.text = "X " + DataManager.GetData(TagManager.SHIPS_DESTROYED_DATA);
+        meteorsDestroyedHighscore.text = "X " + DataManager.GetData(TagManager.METEORS_DESTROYED_DATA);
+        waveHighscore.text = "- " + DataManager.GetData(TagManager.WAVE_NUMBER_DATA);
     }
 
     public void Quit()
