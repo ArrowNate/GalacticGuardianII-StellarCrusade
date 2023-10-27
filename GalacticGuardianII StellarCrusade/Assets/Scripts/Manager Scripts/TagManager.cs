@@ -16,4 +16,8 @@ public static class TagManager
 
     public const string GAMEPLAY_LEVEL_NAME = "Gameplay";
     public const string MAIN_MENU_LEVEL_NAME = "Main Menu";
+
+    public const string WAVE_NUMBER_DATA = "Wave";
+    public const string SHIPS_DESTROYED_DATA = "Ships Destroyed";
+    public const string METEORS_DESTROYED_DATA = "Meteors Destroyed";
 }

@@ -554,7 +554,7 @@ MonoBehaviour:
   - {fileID: 1589085342}
   - {fileID: 1528565899}
   - {fileID: 1949338040}
-  spawnWaitTime: 0
+  spawnWaitTime: 1
   spawnedEnemies: []
 --- !u!4 &146525117
 Transform:

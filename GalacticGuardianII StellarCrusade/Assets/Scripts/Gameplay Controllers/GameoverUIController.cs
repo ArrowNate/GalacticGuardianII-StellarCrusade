@@ -33,9 +33,11 @@ public class GameoverUIController : MonoBehaviour
 
         waveCountFinal--;
 
-        shipsDestroyedFinalInfoText.text = " X" + shipsDestroyedFinal;
-        meteorsDestroyedFinalInfoText.text = " X" + meteorsDestroyedFinal;
+        shipsDestroyedFinalInfoText.text = "X " + shipsDestroyedFinal;
+        meteorsDestroyedFinalInfoText.text = "X " + meteorsDestroyedFinal;
         waveFinalInfoText.text = "WAVE - " + waveCountFinal;
+
+        CalculateHighscore(shipsDestroyedFinal, meteorsDestroyedFinal, waveCountFinal);
     }
 
     public void PlayAgain()
@@ -46,5 +48,25 @@ public class GameoverUIController : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(TagManager.MAIN_MENU_LEVEL_NAME);
+    }
+
+    void CalculateHighscore(int shipsDestroyedCurrent, int meteorsDestroyedCurrent, int waveCurrent)
+    {
+        int shipsDestroyedHighscore = DataManager.GetData(TagManager.SHIPS_DESTROYED_DATA);
+        int meteorsDestroyedHighscore = DataManager.GetData(TagManager.METEORS_DESTROYED_DATA);
+        int waveHighscore = DataManager.GetData(TagManager.WAVE_NUMBER_DATA);
+
+        if (shipsDestroyedCurrent > shipsDestroyedHighscore)
+            DataManager.SaveData(TagManager.SHIPS_DESTROYED_DATA, shipsDestroyedCurrent);
+
+        if (meteorsDestroyedCurrent > meteorsDestroyedHighscore)
+            DataManager.SaveData(TagManager.METEORS_DESTROYED_DATA , meteorsDestroyedCurrent);
+
+        if (waveCurrent > waveHighscore)
+            DataManager.SaveData(TagManager.WAVE_NUMBER_DATA, waveCurrent);
+
+        shipsDestroyedHighscoreText.text = "X " + DataManager.GetData(TagManager.SHIPS_DESTROYED_DATA);
+        meteorsDestroyedHighscoreText.text = "X " + DataManager.GetData(TagManager.METEORS_DESTROYED_DATA);
+        waveHighscoreText.text = "WAVE - " + DataManager.GetData(TagManager.WAVE_NUMBER_DATA);
     }
 }

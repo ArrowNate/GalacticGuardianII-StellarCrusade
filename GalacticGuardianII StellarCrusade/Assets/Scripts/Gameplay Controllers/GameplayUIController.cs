@@ -19,19 +19,19 @@ public class GameplayUIController : MonoBehaviour
     public void SetWaveCount()
     {
         waveCount++;
-        waveInfoText.text = "Wave: " + waveCount;
+        waveInfoText.text = "WAVE - " + waveCount;
     }
 
     public void SetShipsDestroyed()
     {
         shipsDestroyedCount++;
-        shipsDestroyedInfoText.text = shipsDestroyedCount + " X";
+        shipsDestroyedInfoText.text = shipsDestroyedCount + "X ";
     }
 
     public void SetMeteorsDestroyed()
     {
         meteorsDestroyedCount++;
-        meteorsDestroyedInfoText.text = meteorsDestroyedCount + " X";
+        meteorsDestroyedInfoText.text = meteorsDestroyedCount + "X ";
     }
 
     public int GetShipDestroyedCount()
@@ -55,17 +55,17 @@ public class GameplayUIController : MonoBehaviour
         {
             case 1:
                 waveCount++;
-                waveInfoText.text = "Wave: " + waveCount;
+                waveInfoText.text = "WAVE - " + waveCount;
                 break;
 
             case 2:
                 shipsDestroyedCount++;
-                shipsDestroyedInfoText.text = shipsDestroyedCount + " X";
+                shipsDestroyedInfoText.text = shipsDestroyedCount + "X ";
                 break;
 
             case 3:
                 meteorsDestroyedCount++;
-                meteorsDestroyedInfoText.text = meteorsDestroyedCount + " X";
+                meteorsDestroyedInfoText.text = meteorsDestroyedCount + "X ";
                 break;
         }
     }
